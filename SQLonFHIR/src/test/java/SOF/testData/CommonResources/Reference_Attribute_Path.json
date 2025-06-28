@@ -1,0 +1,11 @@
+[
+    "$.record_id",
+    "$.id",
+    "$.field_name",
+    "$.seq_no",
+    "$.reference",
+    "$.type",
+    "$.identifier",
+    "$.display",
+    "$.inserted_date"
+]

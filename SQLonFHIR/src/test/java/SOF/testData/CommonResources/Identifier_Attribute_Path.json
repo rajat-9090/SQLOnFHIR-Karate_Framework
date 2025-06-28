@@ -1,0 +1,13 @@
+[
+    "$.record_id",
+    "$.id",
+    "$.field_name",
+    "$.seq_no",
+    "$.use",
+    "$.type",
+    "$.system",
+    "$.value",
+    "$.period.start",
+    "$.period.end",
+    "$.inserted_date"
+]

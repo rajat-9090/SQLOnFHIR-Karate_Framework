@@ -1,0 +1,123 @@
+{
+  "resourceType": "Patient",
+  "id": "a77660f9-34a5-cd3d-a354-fd9f2eafd03f",
+  "meta": {
+    "extension": [
+      {
+        "url": "urn:Recorded_Date_Time_UTC",
+        "valueString": "2025-02-13T21:10:59Z"
+      },
+      {
+        "url": "urn:CCDFileName",
+        "valueString": "Hiedi833_Reichel38_493b2c07-70f5-d5b0-1f6b-c14bdd0dd353.xml"
+      },
+      {
+        "url": "urn:FHIR",
+        "valueString": "Synthea_Patient_89b3cace-e84e-40ef-a7aa-281c725df6ee_2025-2-13.json"
+      }
+    ],
+    "versionId": "1",
+    "lastUpdated": "2025-02-17T10:38:34.716+00:00",
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+    ]
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "code": "2106-3",
+            "display": "white"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "white"
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+    },
+    {
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "code": "2186-5",
+            "display": "non-hispanic"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "non-hispanic"
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:Source",
+      "value": "Syntheia"
+    },
+    {
+      "system": "urn:PATIENT_ID",
+      "value": "a77660f9-34a5-cd3d-a354-fd9f2eafd03f"
+    },
+    {
+      "system": "urn:oid:2.16.840.1.113883.19.5",
+      "value": "a77660f9-34a5-cd3d-a354-fd9f2eafd03f",
+      "assigner": {
+        "display": "https://github.com/synthetichealth/synthea"
+      }
+    },
+    {
+      "system": "urn:SUBSCRIBER_ID",
+      "value": "a77660f9-34a5-cd3d-a354-fd9f2eafd03f"
+    }
+  ],
+  "name": [
+    {
+      "family": "Reichel38",
+      "given": [
+        "Hiedi833 Jennell254"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1985-03-09",
+  "address": [
+    {
+      "use": "home",
+      "line": [
+        "278 Boyer Key"
+      ],
+      "city": "Denton",
+      "state": "Texas",
+      "postalCode": "76249"
+    },
+    {
+      "use": "office",
+      "line": [
+        "435 cross lime"
+      ],
+      "city": "Phiox",
+      "state": "Austin",
+      "postalCode": "55453"
+    }
+  ],
+  "communication": [
+    {
+      "language": {
+        "coding": [
+          {
+            "system": "urn:ietf:bcp:47",
+            "code": "en-us",
+            "display": "English (United States)"
+          }
+        ]
+      }
+    }
+  ]
+}

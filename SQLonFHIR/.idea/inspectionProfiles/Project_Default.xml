@@ -1,0 +1,53 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="VulnerableLibrariesLocal" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="isIgnoringEnabled" value="true" />
+      <option name="ignoredModules">
+        <list>
+          <option value="SQLonFHIR" />
+          <option value="SQLonFHIR" />
+          <option value="All libs from SQLonFHIR" />
+          <option value="SQLonFHIR" />
+          <option value="SQLonFHIR" />
+          <option value="SQLonFHIR" />
+          <option value="SQLonFHIR" />
+          <option value="SQLonFHIR" />
+          <option value="SQLonFHIR" />
+          <option value="SQLonFHIR" />
+          <option value="SQLonFHIR" />
+        </list>
+      </option>
+      <option name="ignoredPackages">
+        <list>
+          <option value="io.netty:netty-common:4.1.110.Final" />
+          <option value="com.google.protobuf:protobuf-java:3.25.1" />
+          <option value="com.fasterxml.jackson.core:jackson-databind:2.10.1" />
+          <option value="com.fasterxml.jackson.core:jackson-databind:2.10.1" />
+          <option value="com.fasterxml.jackson.core:jackson-core:2.10.1" />
+          <option value="org.apache.velocity:velocity-engine-core:2.1" />
+          <option value="org.jsoup:jsoup:1.12.1" />
+          <option value="com.googlecode.owasp-java-html-sanitizer:owasp-java-html-sanitizer:20191001.1" />
+          <option value="com.google.guava:guava:27.1-jre" />
+          <option value="junit:junit:4.10" />
+          <option value="com.google.code.gson:gson:2.8.6" />
+        </list>
+      </option>
+      <option name="ignoredReasons">
+        <list>
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
