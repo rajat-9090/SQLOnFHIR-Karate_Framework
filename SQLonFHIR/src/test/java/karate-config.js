@@ -6,7 +6,9 @@ function fn() {
   }
   var config = {
     env: env,
-
+    ApiKeyValue: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+    host: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+    Access_Token_URL: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 
   }
   if (env == 'dev') {
