@@ -2,10 +2,7 @@ Feature: OAuth 2.0 Token Generation
 
   Background:
     * url Access_Token_URL
-    * form field anygrant_type = 'client_credentials'
-    * form field anyid = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-    * form field anything = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-    * form field anyscope = "https://sqlonfhir-anything.fhir.azurehealthcareapis.com/.default"
+
 
 
   Scenario: Creating the New Token Everytime when the Test Runs
