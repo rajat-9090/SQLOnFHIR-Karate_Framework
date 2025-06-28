@@ -4,7 +4,7 @@ Feature: OAuth 2.0 Token Generation
     * url Access_Token_URL
     * form field grant_type = 'client_credentials'
     * form field client_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-    * form field client_secret = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    * form field client_any = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     * form field scope = "https://sqlonfhir-anything.fhir.azurehealthcareapis.com/.default"
 
 
