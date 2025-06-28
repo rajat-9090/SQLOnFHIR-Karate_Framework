@@ -3,9 +3,9 @@ Feature: OAuth 2.0 Token Generation
   Background:
     * url Access_Token_URL
     * form field grant_type = 'client_credentials'
-    * form field client_id = "4a72cffb-8191-418d-926f-50b1463e26ef"
-    * form field client_secret = "rob8Q~2McZ4PSJjERYqTU8f0-UpeWEJGSXzH5b9H"
-    * form field scope = "https://sqlonfhir-sqlonfhir.fhir.azurehealthcareapis.com/.default"
+    * form field client_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    * form field client_secret = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    * form field scope = "https://sqlonfhir-anything.fhir.azurehealthcareapis.com/.default"
 
 
   Scenario: Creating the New Token Everytime when the Test Runs

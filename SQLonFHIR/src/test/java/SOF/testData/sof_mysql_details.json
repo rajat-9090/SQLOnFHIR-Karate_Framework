@@ -1,6 +1,6 @@
 {
-  "username": "root",
-  "password": "",
-  "url": "jdbc:mysql://64.236.96.229:9030",
+  "username": "xxxxx",
+  "password": "xxxxxxx",
+  "url": "jdbc:mysql://64.xxx.xx.229:xxxx",
   "driverClassName": "com.mysql.cj.jdbc.Driver"
 }
