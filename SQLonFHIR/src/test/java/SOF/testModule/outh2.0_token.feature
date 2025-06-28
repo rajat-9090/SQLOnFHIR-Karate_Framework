@@ -1,7 +1,6 @@
 Feature: OAuth 2.0 Token Generation
 
-  Background:
-    * url Access_Token_URL
+
 
 
 
