@@ -1,6 +1,12 @@
 Feature: OAuth 2.0 Token Generation
 
-
+Background:  
+	
+	* url Access_Token_URL
+    * form field grant_type = 'client_credentials'
+    * form field client_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    * form field client_secret = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    * form field scope = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 
 
