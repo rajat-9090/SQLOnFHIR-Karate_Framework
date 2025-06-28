@@ -2,17 +2,12 @@ Feature: Performing the Validation Process
 
   Background:
     * url host
-    #    * def resourceName = "Observation"
-    #    * def dbresourceName = "codeableconcept"
-    #    * def fhirID = "00ded5ad-c20c-2c91-6a67-9d3273f0f755"
     #----------------------Reading all the DataBase Details from the json File-------------
     * def config = read("classpath:SOF/testData/sof_mysql_details.json")
     #----------------------Calling DbUtil File for the DB connection-----------------------
     * def DB_Util = Java.type("SOF.utilities.DbUtils")
     * def sof_Table = new DB_Util(config)
     * def failedAttributes = []
-    #----------------------Reading patient Attribute Paths from the json File-------------
-    # def attributes = read("classpath:SOF/testData/CommonResources/Codeableconcept_Attribute_Path.json")
     #--------------------Calling this Feature File to generate the Outh 2.0 Token---------------
     * def newToken = call read("classpath:SOF/testModule/outh2.0_token.feature")
     #---------------------Storing Details to the Excel Sheet------------------
@@ -25,52 +20,7 @@ Feature: Performing the Validation Process
     #----------------------Reading rewrite Attribute Paths from the json File-------------
     * def rewriteMap = read("classpath:SOF/testData/rewrite-Map.json")
     * print rewriteMap
-  #--------------------Calling this Feature File to generate the Outh 2.0 Token---------------
-  #* def newToken = call read("classpath:SOF/testModule/outh2.0_token.feature")
-  #------------------All the DB Data are unavailable so I am using manually placed DB Details-----------------
-  #* def DB_Details = read("classpath:SOF/testData/DummyDB_Data.json")
-  #* print DB_Details
-  #------------------Testing Purposes I am adding this Dummy JSON---------------------
-  #    * def JSON_Details = read("classpath:SOF/testData/DummyJSON_Data.json")
-  #    * print JSON_Details
 
-
-
-
-
-
-
-  #  @checking
-  #  @ignore
-  #  Scenario: Fetching Indivisual Patient Details using FHIR ID
-  #    Given path resourceName, fhirID
-  #    And header ApiKey = ApiKeyValue
-  #    And header Authorization = "Bearer " + newToken.accessToken
-  #    Then method get
-  #    When status 200
-  #    * def patientData = response
-  #    * print patientData
-  #    #------------------Fetching Patient Details from DB using FHIR ID--------------------
-  #    # Step 1: Set a default null value
-  #    * def DB_Details = sof_Table.readRow("SELECT * FROM demo." + dbresourceName + " WHERE id = '" + fhirID + "'")
-  #    * if (!DB_Details) karate.appendTo(failedFHIRIDs, fhirID)
-  #    * print DB_Details
-  #    * print DB_Details.meta_lastupdated
-  #---------------Normalize Specific Fields of "DB_Details"------------------------
-  #    * string meta_extension_string_fixed = karate.eval(karate.get("DB_Details.meta_extension").replace("/'/g'", '"'))
-  #    * print meta_extension_string_fixed
-  #    * def meta_extension_array = karate.fromString(meta_extension_string_fixed)
-  #    * print meta_extension_array
-  #    * def transform = function(item) { return karate.fromString(item); }
-  #    * def meta_extension_json = karate.map(meta_extension_array, transform)
-  #    * print meta_extension_json
-  #    * def communication_array = karate.fromString(DB_Details.communication)
-  #    * print communication_array
-  #    #    #----------------------Extract Values from API Response---------------------------------
-  #    * def field_meta = $.id
-  #    * print field_meta
-  #    #    #    #----------------Assertion to compare API Respose with DB Responce-----------------------
-  #    * match field_meta == DB_Details.id
 
 
   @validationWithCount
